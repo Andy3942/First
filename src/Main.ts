@@ -128,12 +128,14 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected startCreateScene(): void {
-        var button = new eui.Button();
-        button.label = "Click!";
-        button.horizontalCenter = 0;
-        button.verticalCenter = 0;
-        this.addChild(button);
-        button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
+        //var button = new eui.Button();
+        //button.label = "Click!";
+        //button.horizontalCenter = 0;
+        //button.verticalCenter = 0;
+        //this.addChild(button);
+        //button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
+        var gameView:GameView = new GameView();
+        this.addChild(gameView);
     }
 
     private onButtonClick(e: egret.TouchEvent) {

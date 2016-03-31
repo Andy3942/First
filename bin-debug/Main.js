@@ -126,12 +126,14 @@ var Main = (function (_super) {
      * Create scene interface
      */
     p.startCreateScene = function () {
-        var button = new eui.Button();
-        button.label = "Click!";
-        button.horizontalCenter = 0;
-        button.verticalCenter = 0;
-        this.addChild(button);
-        button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
+        //var button = new eui.Button();
+        //button.label = "Click!";
+        //button.horizontalCenter = 0;
+        //button.verticalCenter = 0;
+        //this.addChild(button);
+        //button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
+        var gameView = new GameView();
+        this.addChild(gameView);
     };
     p.onButtonClick = function (e) {
         var panel = new eui.Panel();

@@ -7,8 +7,10 @@ var game_file_list = [
 	"libs/modules/eui/eui.js",
 	"libs/modules/res/res.js",
 	"bin-debug/AssetAdapter.js",
+	"bin-debug/GameView.js",
 	"bin-debug/LoadingUI.js",
 	"bin-debug/Main.js",
+	"bin-debug/TargetSprite.js",
 	"bin-debug/ThemeAdapter.js",
 	//----auto game_file_list end----
 ];
